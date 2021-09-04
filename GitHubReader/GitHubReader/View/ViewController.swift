@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     let tableView = UITableView(frame: .zero, style: .plain)
     
+    let savedRepos = ["Temporario", "Temporario 2"]
+    let unsavedRepos = ["Temporario 1", "temporario 2"]
+    
     override func loadView() {
         let view = UIView(frame: UIScreen.main.bounds)
         view.backgroundColor = .white
@@ -45,5 +48,22 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            return unsavedRepos.count
+        default:
+            return savedRepos.count
+        }
+    }
+    
+    
 }
 
