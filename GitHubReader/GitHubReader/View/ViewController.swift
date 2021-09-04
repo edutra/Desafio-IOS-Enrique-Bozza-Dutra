@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         let view = UIView(frame: UIScreen.main.bounds)
         view.backgroundColor = .white
         self.view = view
+        navigationItem.title = "Github Repos"
     }
 
     override func viewDidLoad() {
