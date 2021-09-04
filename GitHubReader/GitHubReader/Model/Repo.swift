@@ -8,5 +8,6 @@
 import Foundation
 
 class Repo{
-    
+    var repoDetails: String = ""
+    var pullList: [String] = []
 }
