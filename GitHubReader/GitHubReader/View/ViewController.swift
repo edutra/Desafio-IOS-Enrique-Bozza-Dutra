@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         
         stackView.axis = .vertical
         view.addSubview(stackView)
-//        view.addSubview(segmentedControl)
+
         stackView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .zero)
         
     }

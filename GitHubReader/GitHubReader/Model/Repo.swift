@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Repo{
+struct Repo: Decodable{
     var repoDetails: String = ""
     var pullList: [Pull] = []
 }

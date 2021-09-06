@@ -7,10 +7,10 @@
 
 import Foundation
 
-class Pull{
-    let pullTitle: String = ""
-    let pullURL: String = ""
-    let pullNumber: Int = -1
-    let issueURL: String = ""
-    let state: State = .open
+struct Pull: Decodable{
+    let pullTitle: String
+    let pullURL: String
+    let pullNumber: Int
+    let issueURL: String
+//    let state: State = .open
 }
