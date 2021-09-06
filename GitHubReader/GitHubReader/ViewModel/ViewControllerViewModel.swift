@@ -14,6 +14,10 @@ protocol ViewControllerViewModelDelegate: class{
 
 class ViewControllerViewModel{
     
+    
+    var repos: [Repo]?
     weak var delegate: ViewControllerViewModelDelegate?
+    
+    
     
 }
