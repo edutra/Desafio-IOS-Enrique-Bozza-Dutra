@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "193721F5-E871-4D49-BEE5-532E2FFAF8F8"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "047D3B84-F49C-4B99-8963-2F5C928D856A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubReader/ViewModel/ViewControllerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "repoRequest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "047D3B84-F49C-4B99-8963-2F5C928D856A - 41274cf0e5e71e17"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubReader.ViewControllerViewModel.repoRequest() -&gt; ()"
+                  moduleName = "GitHubReader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enriquedutra/Desktop/Desafio-IOS-Enrique-Bozza-Dutra/GitHubReader/GitHubReader/ViewModel/ViewControllerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "047D3B84-F49C-4B99-8963-2F5C928D856A - 8ef79743ce58d4cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;GitHubReader.Repo&gt;) -&gt; () in GitHubReader.ViewControllerViewModel.repoRequest() -&gt; ()"
+                  moduleName = "GitHubReader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enriquedutra/Desktop/Desafio-IOS-Enrique-Bozza-Dutra/GitHubReader/GitHubReader/ViewModel/ViewControllerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

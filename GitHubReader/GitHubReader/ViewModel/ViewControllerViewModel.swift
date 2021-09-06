@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ViewControllerViewModelDelegate: class{
+protocol ViewControllerViewModelDelegate: AnyObject{
     func stopLoading()
     func startLoading()
 }
@@ -17,7 +17,14 @@ class ViewControllerViewModel{
     
     var repos: [Repo]?
     weak var delegate: ViewControllerViewModelDelegate?
+    let service = Request()
     
+    func repoRequest(){
+        service.repoRequest { repos in
+            self.repos = repos
+            print(self.repos)
+        }
+    }
     
     
 }

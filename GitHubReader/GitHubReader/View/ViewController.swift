@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    let viewModel = ViewControllerViewModel()
+    
     let segmentedControl: UISegmentedControl = {
         let sc = UISegmentedControl(items: ["Item 1", "item 2"])
         sc.selectedSegmentIndex = 0
@@ -36,6 +38,8 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
+        viewModel.delegate = self
+        
         let stackView = UIStackView(arrangedSubviews: [
             segmentedControl, tableView
             ])
@@ -44,7 +48,7 @@ class ViewController: UIViewController {
         view.addSubview(stackView)
 
         stackView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .zero)
-        
+        startLoading()
     }
 
 
@@ -62,6 +66,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         default:
             return savedRepos.count
         }
+    }
+    
+    
+}
+
+extension ViewController: ViewControllerViewModelDelegate{
+    func stopLoading() {
+        return
+    }
+    
+    func startLoading() {
+        viewModel.repoRequest()
     }
     
     
