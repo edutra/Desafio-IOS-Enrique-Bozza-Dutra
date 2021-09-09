@@ -66,14 +66,12 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! RepoTableViewCell
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
+        
+            
             cell.repo = viewModel.repos?[indexPath.row]
             cell.awakeFromNib()
             cell.repoNameLabel.text = cell.repo?.name
-        default:
-            return UITableViewCell()
-        }
+        
         
         return cell
     }
