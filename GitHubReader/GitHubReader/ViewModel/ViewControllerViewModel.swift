@@ -10,6 +10,7 @@ import Foundation
 protocol ViewControllerViewModelDelegate: AnyObject{
     func stopLoading()
     func startLoading()
+    func endLoading()
 }
 
 class ViewControllerViewModel{
@@ -22,7 +23,8 @@ class ViewControllerViewModel{
     func repoRequest(){
         service.repoRequest { repos in
             self.repos = repos
-            print(self.repos)
+//            print(self.repos)
+            self.delegate?.endLoading()
         }
     }
     

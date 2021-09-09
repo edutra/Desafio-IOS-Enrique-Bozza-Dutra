@@ -41,7 +41,7 @@ class RepoTableViewCell: UITableViewCell {
         
         addSubview(repoNameLabel)
         
-        repoNameLabel.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor)
+//        repoNameLabel.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor)
     }
     
     required init?(coder aDecoder: NSCoder) {
