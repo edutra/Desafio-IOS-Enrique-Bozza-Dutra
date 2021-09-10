@@ -23,7 +23,7 @@ class ViewControllerViewModel{
     func repoRequest(){
         service.repoRequest { repos in
             self.repos = repos
-//            print(self.repos)
+            print(self.repos)
             self.delegate?.endLoading()
         }
     }

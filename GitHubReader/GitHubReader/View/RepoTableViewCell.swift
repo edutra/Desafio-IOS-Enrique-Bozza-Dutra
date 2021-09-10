@@ -23,7 +23,7 @@ class RepoTableViewCell: UITableViewCell {
         repoNameLabel.translatesAutoresizingMaskIntoConstraints = false
 
 
-        contentView.addSubview(repoNameLabel)
+//        contentView.addSubview(repoNameLabel)
 
 
 
@@ -38,10 +38,11 @@ class RepoTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        repoNameLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        contentView.addSubview(repoNameLabel)
         
-        addSubview(repoNameLabel)
-        
-//        repoNameLabel.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor)
+
     }
     
     required init?(coder aDecoder: NSCoder) {

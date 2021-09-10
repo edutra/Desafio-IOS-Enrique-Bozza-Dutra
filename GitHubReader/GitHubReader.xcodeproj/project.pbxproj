@@ -22,6 +22,7 @@
 		E734349326E6779200B52100 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734349226E6779200B52100 /* ViewControllerViewModel.swift */; };
 		E734349526E6788200B52100 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734349426E6788200B52100 /* Request.swift */; };
 		E734349726E6B9CB00B52100 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734349626E6B9CB00B52100 /* RepoTableViewCell.swift */; };
+		E771676126EBDFF400803DF4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771676026EBDFF400803DF4 /* DetailsViewController.swift */; };
 		E79F003326E436E600C5C81B /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F003226E436E600C5C81B /* UIView+Layout.swift */; };
 		E79F003726E43CDD00C5C81B /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F003626E43CDD00C5C81B /* Repo.swift */; };
 		E79F003926E43E8C00C5C81B /* Pull.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F003826E43E8C00C5C81B /* Pull.swift */; };
@@ -73,6 +74,7 @@
 		E734349226E6779200B52100 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 		E734349426E6788200B52100 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		E734349626E6B9CB00B52100 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		E771676026EBDFF400803DF4 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E79F003226E436E600C5C81B /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		E79F003626E43CDD00C5C81B /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		E79F003826E43E8C00C5C81B /* Pull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pull.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			children = (
 				6E3A97D626DD201A0039AFCC /* ViewController.swift */,
 				E734349626E6B9CB00B52100 /* RepoTableViewCell.swift */,
+				E771676026EBDFF400803DF4 /* DetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				E734349526E6788200B52100 /* Request.swift in Sources */,
 				E734349326E6779200B52100 /* ViewControllerViewModel.swift in Sources */,
 				E79F003B26E4403100C5C81B /* State.swift in Sources */,
+				E771676126EBDFF400803DF4 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

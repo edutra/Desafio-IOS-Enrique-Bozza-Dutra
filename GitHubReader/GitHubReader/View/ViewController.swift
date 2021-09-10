@@ -69,7 +69,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         
             
             cell.repo = viewModel.repos?[indexPath.row]
-            cell.awakeFromNib()
+//            cell.awakeFromNib()
             cell.repoNameLabel.text = cell.repo?.name
         
         
@@ -108,6 +108,14 @@ extension ViewController: ViewControllerViewModelDelegate{
     func startLoading() {
         viewModel.repoRequest()
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == ""{
+            let indexPath = self.tableView.indexPathForSelectedRow
+            let detailsVC = segue.destination as! DetailsViewController
+            detailsVC.repo = self.viewModel.repos?[indexPath?.row ?? 0]
+        }
     }
     
     
