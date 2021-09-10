@@ -59,6 +59,13 @@ class ViewController: UIViewController {
         super.viewDidAppear(false)
         self.tableView.reloadData()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "details"{
+            let indexPath = self.tableView.indexPathForSelectedRow
+            let detailsVC = segue.destination as! DetailsViewController
+            detailsVC.repo = self.viewModel.repos?[indexPath?.row ?? 0]
+        }
+    }
 
 }
 
@@ -90,6 +97,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         return 100
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        self.performSegue(withIdentifier: "details", sender: tableView)
+        
+        let detailsVC = DetailsViewController()
+        detailsVC.repo = self.viewModel.repos?[indexPath.row]
+        self.show(detailsVC, sender: self)
+        
+//        presentViewController(nextViewController, animated: true, completion: nil)
+    }
+    
 
 }
 
@@ -110,13 +127,7 @@ extension ViewController: ViewControllerViewModelDelegate{
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == ""{
-            let indexPath = self.tableView.indexPathForSelectedRow
-            let detailsVC = segue.destination as! DetailsViewController
-            detailsVC.repo = self.viewModel.repos?[indexPath?.row ?? 0]
-        }
-    }
+    
     
     
     

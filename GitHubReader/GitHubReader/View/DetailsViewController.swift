@@ -27,6 +27,11 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let stackView = UIStackView(arrangedSubviews: [
+            nameLabel, descriptionLabel, savedButton
+        ])
+        view.addSubview(stackView)
     }
     
 
