@@ -10,7 +10,18 @@ import UIKit
 class DetailsViewController: UIViewController {
 
     
-    var repo: Repo?
+    var nameLabel = UILabel()
+    var descriptionLabel = UILabel()
+    var savedButton = UIButton()
+    var repo: Repo? {
+        didSet{
+            self.nameLabel.text = repo?.name
+            self.descriptionLabel.text = repo?.description
+            
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
